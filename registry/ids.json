@@ -5,6 +5,10 @@
       "status": "active",
       "path": "flashcards/airspace/airspace-entry-equipment.yaml"
     },
+    "av1ate": {
+      "status": "active",
+      "path": "flashcards/aircraft-inspections/av1ate.yaml"
+    },
     "cloud-clearances": {
       "status": "active",
       "path": "flashcards/airspace/vfr-weather-minimums.yaml"
@@ -78,6 +82,10 @@
     "ads-b-out-airspace": {
       "status": "active",
       "deck_id": "airspace-entry-equipment"
+    },
+    "av1ate-elt-inspection-battery": {
+      "status": "active",
+      "deck_id": "av1ate"
     },
     "speed-below-10000": {
       "status": "active",
@@ -350,8 +358,10 @@
       "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "elt-inspection-battery": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved ELT inspection material into the Aircraft Inspections AV1ATE deck with a new card id."
     },
     "vx": {
       "status": "active",

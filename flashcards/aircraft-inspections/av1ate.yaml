@@ -1,0 +1,9 @@
+id: av1ate
+title: "AV1ATE Inspections"
+subtitle: "Aircraft inspection and equipment currency reminders."
+badge: "AV1"
+accent: green
+cards:
+  - id: av1ate-elt-inspection-battery
+    prompt: "ELT inspection / battery rule"
+    answer: "Inspect every 12 calendar months. Replace battery after 1 cumulative hour of use or at 50% of useful life."
