@@ -1,6 +1,6 @@
 id: required-equipment
 title: "VFR Required Equipment (91.205)"
-subtitle: "ATOMATOFLAMES, FLAPS, and ELT inspection memory items."
+subtitle: "ATOMATOFLAMES and FLAPS memory items."
 badge: "EQ"
 accent: flame
 cards:
@@ -76,6 +76,3 @@ cards:
     prompt: "FLAP**S** - S"
     answer: "Source of electrical energy"
     detail: "Adequate for all installed electrical and radio equipment."
-  - id: elt-inspection-battery
-    prompt: "ELT inspection / battery rule"
-    answer: "Inspect every 12 calendar months. Replace battery after 1 cumulative hour of use or at 50% of useful life."
