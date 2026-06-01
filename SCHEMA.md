@@ -44,10 +44,12 @@ cards:
   (e.g. `c172-elec-…`) to stay clear of other contributions.
 - **`id`s are forever.** Once a deck/card id has shipped, never reuse it for
   different content — edit in place or pick a new id.
+- New ids must be added to `registry/ids.json` with `status: "active"`.
+- To remove shipped content, mark the id `retired` in the registry with
+  `retired_at` and `reason`; never reuse retired ids.
 - Each deck needs a `title` and at least one card.
 - Each card needs a non-empty `prompt` and `answer`. `detail` is optional.
 - `accent` must be one of `sky`, `avgas`, `flame`, `heart`, `green`.
 
-If you omit a card `id`, the compiler derives one as `<deckId>.<n>` — but an
-explicit, namespaced id is strongly preferred so it stays stable if you
-reorder cards.
+Every card must declare an explicit, namespaced `id` so the registry can
+protect it across future edits.

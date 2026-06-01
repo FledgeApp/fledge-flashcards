@@ -20,6 +20,9 @@ flashcards/<folder>/<deck>.yaml     # a deck: title, badge, accent, cards
 
 - **Every pull request is validated in CI** with the exact compiler the app
   uses (`tools/flashcards.js`). A green check means your deck will compile.
+- **Deck and card IDs are permanent.** CI also checks
+  [`registry/ids.json`](registry/ids.json), which prevents accidental deletion,
+  rename, or reuse of IDs that users may already have in their library or stats.
 - **Merges to `main` publish** the compiled catalog to the CDN. The app picks
   it up on next launch (or when it regains connectivity).
 
@@ -27,12 +30,13 @@ flashcards/<folder>/<deck>.yaml     # a deck: title, badge, accent, cards
 
 1. Read [`SCHEMA.md`](SCHEMA.md) and [`CONTRIBUTING.md`](CONTRIBUTING.md).
 2. Copy `flashcards/cessna-172-systems/electrical.yaml` as a starting point.
-3. Validate locally:
+3. Register your new deck/card ids in [`registry/ids.json`](registry/ids.json).
+4. Validate locally:
    ```sh
    npm install
    npm run validate
    ```
-4. Open a PR. CI re-runs `validate`; a maintainer reviews and merges.
+5. Open a PR. CI re-runs `validate`; a maintainer reviews and merges.
 
 ## License
 

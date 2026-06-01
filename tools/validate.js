@@ -8,10 +8,14 @@
 
 const path = require('path');
 const { compileFlashcards } = require('./flashcards');
+const { validateIdRegistry } = require('./validate-registry');
 
 const FLASHCARDS_ROOT = path.join(__dirname, '..', 'flashcards');
 
 const { folders, errors, warnings } = compileFlashcards(FLASHCARDS_ROOT);
+const registryResult = validateIdRegistry();
+errors.push(...registryResult.errors);
+warnings.push(...registryResult.warnings);
 
 for (const w of warnings) console.warn(`  ! ${w}`);
 

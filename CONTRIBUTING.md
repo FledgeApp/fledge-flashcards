@@ -16,6 +16,29 @@ npm install
 - **Id rules (important):** deck and card ids are globally unique across the
   whole repo and permanent once shipped. Prefix them so they don't collide
   with other contributions — e.g. `c172-elec-voltage`, `wb-arm-cg`.
+- Add new deck and card ids to [`registry/ids.json`](registry/ids.json).
+  CI fails if a live id appears in YAML without a matching active registry
+  entry, or if an active registry entry disappears from YAML.
+
+## Editing and retiring shipped content
+
+The app stores user libraries by `deck.id` and practice stats by `card.id`, so
+ids are append-only.
+
+- **Fix a typo, wrong answer, stale wording, or changed regulation:** edit the
+  existing card in place and keep the same id. The user was studying the same
+  concept, so their history should stay attached.
+- **Split one card into several cards, or replace it with a substantially new
+  concept:** mark the old card id as `retired` in `registry/ids.json`, remove
+  it from YAML, and add new card ids for the new cards.
+- **Remove a deck:** mark the deck id as `retired`, retire every card id that
+  belonged to it, and remove the deck YAML. Existing users simply stop seeing
+  that deck after the next catalog refresh; old stats remain historical data.
+- **Never reuse a retired id.** Retired ids stay in the registry forever.
+
+Retired entries must include `retired_at` (`YYYY-MM-DD`) and a short `reason`.
+Optional `replacement_deck_id` / `replacement_card_id` fields are useful when
+there is a clear successor.
 
 ## 3. Validate locally
 
