@@ -1,0 +1,17 @@
+{
+  "name": "fledge-flashcards",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Community flashcard decks for the Fledge pilot-training app",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "validate": "node tools/validate.js",
+    "build": "node tools/build.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,20 @@
+# Example deck — copy this file as a starting point for your own.
+# Every `id` (deck + cards) must be globally unique across ALL decks in this
+# repo. Namespace them with a short prefix (here: c172-elec-) so independent
+# contributions never collide. See SCHEMA.md for the full schema.
+id: c172-electrical
+title: "C172 Electrical System"
+subtitle: "Buses, alternator, battery, and what fails when the alternator quits."
+badge: "ELEC"
+accent: flame                     # sky | avgas | flame | heart | green
+cards:
+  - id: c172-elec-voltage
+    prompt: "C172 electrical system voltage"
+    answer: "28-volt DC system (14-volt on older models)."
+  - id: c172-elec-power-sources
+    prompt: "Primary electrical power sources"
+    answer: "Engine-driven alternator (primary) and a battery (backup / start)."
+  - id: c172-elec-alt-failure
+    prompt: "What happens if the alternator fails in flight?"
+    answer: "The battery carries the load. Shed nonessential electrics and land before the battery is depleted."
+    detail: "The low-voltage annunciator illuminates. Time aloft on battery alone is limited, so reduce electrical load immediately."
