@@ -7,6 +7,7 @@ title: "C172 Electrical System"
 subtitle: "Buses, alternator, battery, and what fails when the alternator quits (C172)."
 badge: "ELEC"
 accent: flame                     # sky | avgas | flame | heart | green
+deprecated: true
 cards:
   - id: c172-elec-voltage
     prompt: "C172 electrical system voltage"

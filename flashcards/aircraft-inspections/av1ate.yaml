@@ -1,9 +1,41 @@
 id: av1ate
-title: "AV1ATE Inspections"
-subtitle: "Aircraft inspection and equipment currency reminders."
+title: "AV1ATES Aircraft Inspections"
+subtitle: "Annual, VOR, 100-hour, ADs, transponder, ELT, and static/altimeter checks."
 badge: "AV1"
 accent: green
 cards:
+  - id: av1ate-annual-inspection
+    prompt: "**A**V1ATES - A"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "Annual inspection"
+    detail: "Required every 12 calendar months for all civil aircraft. Must be performed by an A&P mechanic with Inspection Authorization (IA)."
+  - id: av1ate-vor-check
+    prompt: "A**V**1ATES - V"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "VOR check"
+    detail: "Required within the preceding 30 days before using VOR equipment for IFR operations. Log the check for compliance."
+  - id: av1ate-100-hour-inspection
+    prompt: "AV**1**ATES - 1"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "100-hour inspection"
+    detail: "Required for aircraft carrying persons for hire or used for flight instruction for hire when the instructor provides the aircraft."
+  - id: av1ate-airworthiness-directives
+    prompt: "AV1**A**TES - A"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "Airworthiness directives (ADs)"
+    detail: "FAA safety directives are mandatory. An overdue applicable AD generally means the aircraft is not airworthy until addressed."
+  - id: av1ate-transponder-check
+    prompt: "AV1A**T**ES - T"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "Transponder check"
+    detail: "Required every 24 calendar months under 14 CFR 91.413 before using the transponder."
   - id: av1ate-elt-inspection-battery
-    prompt: "ELT inspection / battery rule"
-    answer: "Inspect every 12 calendar months. Replace battery after 1 cumulative hour of use or at 50% of useful life."
+    prompt: "AV1AT**E**S - E"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "ELT inspection / battery rule"
+    detail: "Inspect every 12 calendar months. Replace or recharge the battery after 1 cumulative hour of use or at 50% of useful life."
+  - id: av1ate-static-altimeter-check
+    prompt: "AV1ATE**S** - S"
+    prompt_subtitle: "Aircraft inspection currency"
+    answer: "Static system and altimeter check"
+    detail: "Required every 24 calendar months for IFR operations under 14 CFR 91.411."
