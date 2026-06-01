@@ -1,113 +1,81 @@
 id: required-equipment
-title: "Required Equipment (91.205)"
-subtitle: "ATOMATOFLAMES, FLAPS, GRABCARD memorization."
+title: "VFR Required Equipment (91.205)"
+subtitle: "ATOMATOFLAMES, FLAPS, and ELT inspection memory items."
 badge: "EQ"
 accent: flame
 cards:
   - id: req-day-airspeed
-    prompt: "*A*TOMATOFLAMES - A"
+    prompt: "**A**TOMATOFLAMES - A"
     answer: "Airspeed indicator"
     detail: "Day VFR required equipment under 91.205(b)."
   - id: req-day-tachometer
-    prompt: "A*T*OMATOFLAMES - T"
+    prompt: "A**T**OMATOFLAMES - T"
     answer: "Tachometer for each engine"
     detail: "Required for each installed engine."
   - id: req-day-oil-pressure
-    prompt: "AT*O*MATOFLAMES - O"
+    prompt: "AT**O**MATOFLAMES - O"
     answer: "Oil pressure gauge"
     detail: "Required for each engine using a pressure system."
   - id: req-day-manifold-pressure
-    prompt: "ATO*M*ATOFLAMES - M"
+    prompt: "ATO**M**ATOFLAMES - M"
     answer: "Manifold pressure gauge"
     detail: "Required for each altitude engine."
   - id: req-day-altimeter
-    prompt: "ATOM*A*TOFLAMES - A"
+    prompt: "ATOM**A**TOFLAMES - A"
     answer: "Altimeter"
     detail: "Day VFR required equipment under 91.205(b)."
   - id: req-day-temperature-liquid
-    prompt: "ATOMA*T*OFLAMES - T"
+    prompt: "ATOMA**T**OFLAMES - T"
     answer: "Temperature gauge"
     detail: "Required for each liquid-cooled engine."
   - id: req-day-oil-temperature
-    prompt: "ATOMAT*O*FLAMES - O"
+    prompt: "ATOMAT**O**FLAMES - O"
     answer: "Oil temperature gauge"
     detail: "Required for each air-cooled engine."
   - id: req-day-fuel-gauge
-    prompt: "ATOMATO*F*LAMES - F"
+    prompt: "ATOMATO**F**LAMES - F"
     answer: "Fuel gauge"
     detail: "Required for each fuel tank."
   - id: req-day-landing-gear-position
-    prompt: "ATOMATOF*L*AMES - L"
+    prompt: "ATOMATOF**L**AMES - L"
     answer: "Landing gear position indicator"
     detail: "Required if the aircraft has retractable landing gear."
   - id: req-day-anticollision-lights
-    prompt: "ATOMATOFL*A*MES - A"
+    prompt: "ATOMATOFL**A**MES - A"
     answer: "Approved aviation red or white anti-collision light system"
     detail: "Required for small civil aircraft certificated after March 11, 1996, subject to the rule's exceptions."
   - id: req-day-magnetic-compass
-    prompt: "ATOMATOFLA*M*ES - M"
+    prompt: "ATOMATOFLA**M**ES - M"
     answer: "Magnetic direction indicator"
     detail: "Often remembered as the magnetic compass."
   - id: req-day-elt
-    prompt: "ATOMATOFLAM*E*S - E"
+    prompt: "ATOMATOFLAM**E**S - E"
     answer: "Emergency locator transmitter (ELT)"
     detail: "Required when applicable under 91.207."
   - id: req-day-seatbelts
-    prompt: "ATOMATOFLAME*S* - S"
+    prompt: "ATOMATOFLAME**S** - S"
     answer: "Safety belts"
     detail: "Required for each occupant age 2 or older."
   - id: req-night-fuses
-    prompt: "*F*LAPS - F"
+    prompt: "**F**LAPS - F"
     answer: "Spare fuses"
     detail: "One spare set, or three spare fuses of each kind required, if the aircraft uses fuses accessible to the pilot in flight."
   - id: req-night-landing-light
-    prompt: "F*L*APS - L"
+    prompt: "F**L**APS - L"
     answer: "Landing light"
     detail: "Required for night VFR if the aircraft is operated for hire."
   - id: req-night-anticollision-lights
-    prompt: "FL*A*PS - A"
+    prompt: "FL**A**PS - A"
     answer: "Approved anti-collision light system"
     detail: "Required for night VFR under 91.205(c), subject to the rule's safety exception."
   - id: req-night-position-lights
-    prompt: "FLA*P*S - P"
+    prompt: "FLA**P**S - P"
     answer: "Position lights"
     detail: "Required for night VFR."
   - id: req-night-source-electrical
-    prompt: "FLAP*S* - S"
+    prompt: "FLAP**S** - S"
     answer: "Source of electrical energy"
     detail: "Adequate for all installed electrical and radio equipment."
-  - id: req-ifr-generator
-    prompt: "*G*RABCARD - G"
-    answer: "Generator or alternator"
-    detail: "IFR required equipment under 91.205(d)."
-  - id: req-ifr-radios
-    prompt: "G*R*ABCARD - R"
-    answer: "Radio/navigation equipment appropriate to the facilities used"
-    detail: "The equipment must be appropriate for the route and procedures to be flown."
-  - id: req-ifr-altimeter
-    prompt: "GR*A*BCARD - A"
-    answer: "Sensitive altimeter adjustable for barometric pressure"
-    detail: "IFR required equipment under 91.205(d)."
-  - id: req-ifr-ball
-    prompt: "GRA*B*CARD - B"
-    answer: "Slip-skid indicator"
-    detail: "Often remembered as the ball."
-  - id: req-ifr-clock
-    prompt: "GRAB*C*ARD - C"
-    answer: "Clock"
-    detail: "Must display hours, minutes, and seconds with a sweep-second pointer or digital presentation."
-  - id: req-ifr-attitude
-    prompt: "GRABC*A*RD - A"
-    answer: "Gyroscopic pitch and bank indicator"
-    detail: "Often called the attitude indicator."
-  - id: req-ifr-rate-turn
-    prompt: "GRABCA*R*D - R"
-    answer: "Gyroscopic rate-of-turn indicator"
-    detail: "Some aircraft have approved exceptions, but this is the mnemonic item."
-  - id: req-ifr-directional-gyro
-    prompt: "GRABCAR*D* - D"
-    answer: "Gyroscopic direction indicator"
-    detail: "Often called the directional gyro or heading indicator."
   - id: elt-inspection-battery
     prompt: "ELT inspection / battery rule"
     answer: "Inspect every 12 calendar months. Replace battery after 1 cumulative hour of use or at 50% of useful life."

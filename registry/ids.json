@@ -13,6 +13,10 @@
       "status": "active",
       "path": "flashcards/cessna-172-systems/electrical.yaml"
     },
+    "ifr-required-equipment": {
+      "status": "active",
+      "path": "flashcards/instrument-procedures/ifr-required-equipment.yaml"
+    },
     "lost-comm": {
       "status": "active",
       "path": "flashcards/instrument-procedures/lost-comm-ifr.yaml"
@@ -155,6 +159,38 @@
       "status": "active",
       "deck_id": "c172-electrical"
     },
+    "ifr-required-generator": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-radios": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-altimeter": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-ball": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-clock": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-attitude": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-rate-turn": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
+    "ifr-required-directional-gyro": {
+      "status": "active",
+      "deck_id": "ifr-required-equipment"
+    },
     "route-avef": {
       "status": "active",
       "deck_id": "lost-comm"
@@ -266,36 +302,52 @@
       "deck_id": "required-equipment"
     },
     "req-ifr-generator": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-radios": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-altimeter": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-ball": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-clock": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-attitude": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-rate-turn": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "req-ifr-directional-gyro": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Moved IFR-only GRABCARD material into a dedicated IFR Required Equipment deck with new card ids."
     },
     "elt-inspection-battery": {
       "status": "active",
