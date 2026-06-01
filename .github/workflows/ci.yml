@@ -1,0 +1,57 @@
+name: flashcards
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  # Every PR (and push) must compile cleanly. A green check here means the
+  # deck is guaranteed to compile into the published catalog.
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm run validate
+
+  # On merge to main, compile the catalog and publish it to the CDN that the
+  # Fledge app fetches at runtime. PRs do NOT publish — only validate.
+  publish:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm run build   # writes dist/flashcards.json
+
+      # --- Publish to CDN ---------------------------------------------------
+      # TODO: wire this to the same CDN origin the app points at
+      # (FlashcardCatalog.remoteCatalogURL). The example below uploads to an S3
+      # origin and invalidates a CloudFront distribution; swap for your CDN.
+      # Set repo secrets: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY,
+      # FLASHCARDS_S3_BUCKET, FLASHCARDS_CF_DISTRIBUTION_ID.
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: Upload to CDN origin
+        run: |
+          aws s3 cp dist/flashcards.json \
+            "s3://${{ secrets.FLASHCARDS_S3_BUCKET }}/flashcards/flashcards.json" \
+            --cache-control "public, max-age=300" \
+            --content-type "application/json"
+      - name: Invalidate CDN cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ secrets.FLASHCARDS_CF_DISTRIBUTION_ID }}" \
+            --paths "/flashcards/flashcards.json"
