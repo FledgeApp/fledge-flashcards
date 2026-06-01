@@ -4,7 +4,7 @@
 # contributions never collide. See SCHEMA.md for the full schema.
 id: c172-electrical
 title: "C172 Electrical System"
-subtitle: "Buses, alternator, battery, and what fails when the alternator quits."
+subtitle: "Buses, alternator, battery, and what fails when the alternator quits (C172)."
 badge: "ELEC"
 accent: flame                     # sky | avgas | flame | heart | green
 cards:
