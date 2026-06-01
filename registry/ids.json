@@ -105,6 +105,10 @@
       "status": "active",
       "deck_id": "av1ate"
     },
+    "av1ate-altimeter-check": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
     "av1ate-transponder-check": {
       "status": "active",
       "deck_id": "av1ate"
