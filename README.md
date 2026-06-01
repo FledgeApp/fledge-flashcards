@@ -23,6 +23,8 @@ flashcards/<folder>/<deck>.yaml     # a deck: title, badge, accent, cards
 - **Deck and card IDs are permanent.** CI also checks
   [`registry/ids.json`](registry/ids.json), which prevents accidental deletion,
   rename, or reuse of IDs that users may already have in their library or stats.
+  Decks can be marked `deprecated` to hide them from new adds while preserving
+  access for users who already added them.
 - **Merges to `main` publish** the compiled catalog to the CDN. The app picks
   it up on next launch (or when it regains connectivity).
 

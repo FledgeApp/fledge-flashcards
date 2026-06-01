@@ -28,15 +28,22 @@ ids are append-only.
 - **Fix a typo, wrong answer, stale wording, or changed regulation:** edit the
   existing card in place and keep the same id. The user was studying the same
   concept, so their history should stay attached.
+- **Stop offering a deck to new users but keep it for people who already added
+  it:** mark the deck id as `deprecated` in `registry/ids.json`, set
+  `deprecated: true` in the deck YAML, and keep its cards in place. The app can
+  hide it from Browse while still showing it in existing users' libraries.
 - **Split one card into several cards, or replace it with a substantially new
   concept:** mark the old card id as `retired` in `registry/ids.json`, remove
   it from YAML, and add new card ids for the new cards.
-- **Remove a deck:** mark the deck id as `retired`, retire every card id that
-  belonged to it, and remove the deck YAML. Existing users simply stop seeing
-  that deck after the next catalog refresh; old stats remain historical data.
+- **Remove a deck completely:** first prefer `deprecated` if users may still
+  benefit from access. If it must disappear, mark the deck id as `retired`,
+  retire every card id that belonged to it, and remove the deck YAML. Existing
+  users stop seeing that deck after the next catalog refresh; old stats remain
+  historical data.
 - **Never reuse a retired id.** Retired ids stay in the registry forever.
 
-Retired entries must include `retired_at` (`YYYY-MM-DD`) and a short `reason`.
+Deprecated entries must include `deprecated_at` (`YYYY-MM-DD`) and `reason`.
+Retired entries must include `retired_at` (`YYYY-MM-DD`) and `reason`.
 Optional `replacement_deck_id` / `replacement_card_id` fields are useful when
 there is a clear successor.
 

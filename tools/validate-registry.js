@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const VALID_STATUSES = new Set(['active', 'retired']);
+const VALID_DECK_STATUSES = new Set(['active', 'deprecated', 'retired']);
+const VALID_CARD_STATUSES = new Set(['active', 'retired']);
 
 function readJson(filePath, errors) {
   try {
@@ -46,7 +47,7 @@ function scanFlashcards(repoRoot, errors) {
 
       const deckId = String(raw.id || '').trim();
       if (!deckId) continue;
-      decks.set(deckId, { path: relativePath, cardIds: new Set() });
+      decks.set(deckId, { path: relativePath, cardIds: new Set(), deprecated: raw.deprecated === true });
 
       for (const [idx, card] of (raw.cards || []).entries()) {
         const cardId = String(card?.id || '').trim();
@@ -64,12 +65,17 @@ function scanFlashcards(repoRoot, errors) {
 }
 
 function validateRegistryEntry(kind, id, entry, errors) {
+  const validStatuses = kind === 'deck' ? VALID_DECK_STATUSES : VALID_CARD_STATUSES;
   if (!entry || typeof entry !== 'object') {
     errors.push(`registry ${kind} "${id}" must be an object`);
     return;
   }
-  if (!VALID_STATUSES.has(entry.status)) {
-    errors.push(`registry ${kind} "${id}" has invalid status "${entry.status}" (use active or retired)`);
+  if (!validStatuses.has(entry.status)) {
+    errors.push(`registry ${kind} "${id}" has invalid status "${entry.status}" (use one of: ${[...validStatuses].join(', ')})`);
+  }
+  if (entry.status === 'deprecated') {
+    if (!entry.deprecated_at) errors.push(`registry ${kind} "${id}" is deprecated but missing deprecated_at`);
+    if (!entry.reason) errors.push(`registry ${kind} "${id}" is deprecated but missing reason`);
   }
   if (entry.status === 'retired') {
     if (!entry.retired_at) errors.push(`registry ${kind} "${id}" is retired but missing retired_at`);
@@ -102,6 +108,17 @@ function validateIdRegistry({
         errors.push(`active deck id "${deckId}" is missing from flashcards; mark it retired instead of deleting it`);
       } else if (entry.path && entry.path !== currentDeck.path) {
         errors.push(`active deck id "${deckId}" moved from "${entry.path}" to "${currentDeck.path}"; update registry/ids.json if this move is intentional`);
+      } else if (currentDeck.deprecated) {
+        errors.push(`active deck id "${deckId}" has deprecated: true in YAML; mark it deprecated in registry/ids.json`);
+      }
+    }
+    if (entry.status === 'deprecated') {
+      if (!currentDeck) {
+        errors.push(`deprecated deck id "${deckId}" is missing from flashcards; mark it retired if it should disappear entirely`);
+      } else if (entry.path && entry.path !== currentDeck.path) {
+        errors.push(`deprecated deck id "${deckId}" moved from "${entry.path}" to "${currentDeck.path}"; update registry/ids.json if this move is intentional`);
+      } else if (!currentDeck.deprecated) {
+        errors.push(`deprecated deck id "${deckId}" must set deprecated: true in its deck YAML`);
       }
     }
     if (entry.status === 'retired' && currentDeck) {
@@ -115,6 +132,8 @@ function validateIdRegistry({
       errors.push(`new deck id "${deckId}" at ${currentDeck.path} is not registered in registry/ids.json`);
     } else if (entry.status === 'retired') {
       errors.push(`deck id "${deckId}" at ${currentDeck.path} reuses a retired id`);
+    } else if (currentDeck.deprecated && entry.status !== 'deprecated') {
+      errors.push(`deck id "${deckId}" at ${currentDeck.path} has deprecated: true but registry status is "${entry.status}"`);
     }
   }
 
