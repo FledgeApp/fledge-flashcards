@@ -6,73 +6,91 @@ accent: flame
 cards:
   - id: req-day-airspeed
     prompt: "**A**TOMATOFLAMES - A"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Airspeed indicator"
     detail: "Day VFR required equipment under 91.205(b)."
   - id: req-day-tachometer
     prompt: "A**T**OMATOFLAMES - T"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Tachometer for each engine"
     detail: "Required for each installed engine."
   - id: req-day-oil-pressure
     prompt: "AT**O**MATOFLAMES - O"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Oil pressure gauge"
     detail: "Required for each engine using a pressure system."
   - id: req-day-manifold-pressure
     prompt: "ATO**M**ATOFLAMES - M"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Manifold pressure gauge"
     detail: "Required for each altitude engine."
   - id: req-day-altimeter
     prompt: "ATOM**A**TOFLAMES - A"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Altimeter"
     detail: "Day VFR required equipment under 91.205(b)."
   - id: req-day-temperature-liquid
     prompt: "ATOMA**T**OFLAMES - T"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Temperature gauge"
     detail: "Required for each liquid-cooled engine."
   - id: req-day-oil-temperature
     prompt: "ATOMAT**O**FLAMES - O"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Oil temperature gauge"
     detail: "Required for each air-cooled engine."
   - id: req-day-fuel-gauge
     prompt: "ATOMATO**F**LAMES - F"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Fuel gauge"
     detail: "Required for each fuel tank."
   - id: req-day-landing-gear-position
     prompt: "ATOMATOF**L**AMES - L"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Landing gear position indicator"
     detail: "Required if the aircraft has retractable landing gear."
   - id: req-day-anticollision-lights
     prompt: "ATOMATOFL**A**MES - A"
-    answer: "Approved aviation red or white anti-collision light system"
-    detail: "Required for small civil aircraft certificated after March 11, 1996, subject to the rule's exceptions."
+    prompt_subtitle: "Day VFR Required Equipment"
+    answer: "Anti-collision lights"
+    detail: "Approved aviation red or aviation white anticollision light system for aircraft certified after March 11, 1996."
   - id: req-day-magnetic-compass
     prompt: "ATOMATOFLA**M**ES - M"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Magnetic direction indicator"
     detail: "Often remembered as the magnetic compass."
   - id: req-day-elt
     prompt: "ATOMATOFLAM**E**S - E"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Emergency locator transmitter (ELT)"
     detail: "Required when applicable under 91.207."
   - id: req-day-seatbelts
     prompt: "ATOMATOFLAME**S** - S"
+    prompt_subtitle: "Day VFR Required Equipment"
     answer: "Safety belts"
     detail: "Required for each occupant age 2 or older."
   - id: req-night-fuses
     prompt: "**F**LAPS - F"
+    prompt_subtitle: "Night VFR Required Equipment"
     answer: "Spare fuses"
     detail: "One spare set, or three spare fuses of each kind required, if the aircraft uses fuses accessible to the pilot in flight."
   - id: req-night-landing-light
     prompt: "F**L**APS - L"
+    prompt_subtitle: "Night VFR Required Equipment"
     answer: "Landing light"
     detail: "Required for night VFR if the aircraft is operated for hire."
   - id: req-night-anticollision-lights
     prompt: "FL**A**PS - A"
+    prompt_subtitle: "Night VFR Required Equipment"
     answer: "Approved anti-collision light system"
     detail: "Required for night VFR under 91.205(c), subject to the rule's safety exception."
   - id: req-night-position-lights
     prompt: "FLA**P**S - P"
+    prompt_subtitle: "Night VFR Required Equipment"
     answer: "Position lights"
     detail: "Required for night VFR."
   - id: req-night-source-electrical
     prompt: "FLAP**S** - S"
+    prompt_subtitle: "Night VFR Required Equipment"
     answer: "Source of electrical energy"
     detail: "Adequate for all installed electrical and radio equipment."

@@ -33,6 +33,7 @@ deprecated: true                  # optional; hide from new adds, keep for exist
 cards:
   - id: c172-elec-voltage         # stable, globally unique card id
     prompt: "C172 electrical system voltage"
+    prompt_subtitle: "Electrical System"  # optional context shown below prompt
     answer: "28-volt DC system."
     detail: "Optional longer note shown on the back of the card."
 ```
@@ -52,7 +53,8 @@ cards:
 - To remove shipped content completely, mark the id `retired` in the registry
   with `retired_at` and `reason`; never reuse retired ids.
 - Each deck needs a `title` and at least one card.
-- Each card needs a non-empty `prompt` and `answer`. `detail` is optional.
+- Each card needs a non-empty `prompt` and `answer`. `prompt_subtitle`
+  and `detail` are optional.
 - `accent` must be one of `sky`, `avgas`, `flame`, `heart`, `green`.
 
 Every card must declare an explicit, namespaced `id` so the registry can
