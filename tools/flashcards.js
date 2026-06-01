@@ -49,6 +49,7 @@ function compileFolder(folderDir, errors) {
     const seenCardIds = new Set();
     for (const [idx, c] of raw.cards.entries()) {
       const prompt = String(c?.prompt || '').trim();
+      const promptSubtitle = String(c?.prompt_subtitle || c?.promptSubtitle || '').trim();
       const answer = String(c?.answer || '').trim();
       if (!prompt || !answer) {
         errors.push(`${full}: cards[${idx}] needs prompt and answer`);
@@ -63,6 +64,7 @@ function compileFolder(folderDir, errors) {
       cards.push({
         id: cardId,
         prompt,
+        ...(promptSubtitle ? { promptSubtitle } : {}),
         answer,
         ...(c.detail ? { detail: String(c.detail).trim() } : {}),
       });
