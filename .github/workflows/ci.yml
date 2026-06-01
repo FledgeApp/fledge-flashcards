@@ -18,15 +18,22 @@ jobs:
       - run: npm ci
       - run: npm run validate
 
-  # On merge to main, compile the catalog and publish it to the CDN that the
-  # Fledge app fetches at runtime. PRs do NOT publish — only validate.
+  # On merge to main, compile the catalog and publish it to the CloudFront CDN
+  # the Fledge app fetches at runtime. PRs do NOT publish — only validate.
   # Gated behind the FLASHCARDS_PUBLISH_ENABLED repo variable so CI stays green
-  # before the CDN is provisioned. Set it (Settings → Secrets and variables →
-  # Actions → Variables) to `true` along with the AWS secrets below to go live.
+  # until publishing is turned on (Settings → Secrets and variables → Actions →
+  # Variables → set FLASHCARDS_PUBLISH_ENABLED = true).
+  #
+  # Auth is GitHub OIDC (no long-lived keys): the workflow assumes the IAM role
+  # GitHubActions-FledgeFlashcards, which is trusted only for this repo and may
+  # only PutObject to the catalog bucket + invalidate this one distribution.
   publish:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.FLASHCARDS_PUBLISH_ENABLED == 'true'
     needs: validate
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -34,27 +41,17 @@ jobs:
           node-version: "20"
       - run: npm ci
       - run: npm run build   # writes dist/flashcards.json
-
-      # --- Publish to CDN ---------------------------------------------------
-      # TODO: wire this to the same CDN origin the app points at
-      # (FlashcardCatalog.remoteCatalogURL). The example below uploads to an S3
-      # origin and invalidates a CloudFront distribution; swap for your CDN.
-      # Set repo secrets: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY,
-      # FLASHCARDS_S3_BUCKET, FLASHCARDS_CF_DISTRIBUTION_ID.
-      - name: Configure AWS credentials
+      - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
-      - name: Upload to CDN origin
+          role-to-assume: arn:aws:iam::953352003729:role/GitHubActions-FledgeFlashcards
+          aws-region: us-east-2
+      - name: Upload catalog to S3 origin
         run: |
           aws s3 cp dist/flashcards.json \
-            "s3://${{ secrets.FLASHCARDS_S3_BUCKET }}/flashcards/flashcards.json" \
-            --cache-control "public, max-age=300" \
-            --content-type "application/json"
-      - name: Invalidate CDN cache
+            s3://fledge-flashcards-data/flashcards.json \
+            --content-type application/json --cache-control "max-age=300"
+      - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id "${{ secrets.FLASHCARDS_CF_DISTRIBUTION_ID }}" \
-            --paths "/flashcards/flashcards.json"
+            --distribution-id E3B8GX2GXJCWM5 --paths "/flashcards.json"
