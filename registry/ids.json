@@ -176,14 +176,124 @@
       "deck_id": "lost-comm"
     },
     "atomatoflames": {
-      "status": "active",
-      "deck_id": "required-equipment"
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Split mnemonic summary into per-letter cards."
     },
     "flaps": {
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Split mnemonic summary into per-letter cards."
+    },
+    "grabcard": {
+      "status": "retired",
+      "deck_id": "required-equipment",
+      "retired_at": "2026-06-01",
+      "reason": "Split mnemonic summary into per-letter cards."
+    },
+    "req-day-airspeed": {
       "status": "active",
       "deck_id": "required-equipment"
     },
-    "grabcard": {
+    "req-day-tachometer": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-oil-pressure": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-manifold-pressure": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-altimeter": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-temperature-liquid": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-oil-temperature": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-fuel-gauge": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-landing-gear-position": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-anticollision-lights": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-magnetic-compass": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-elt": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-day-seatbelts": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-night-fuses": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-night-landing-light": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-night-anticollision-lights": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-night-position-lights": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-night-source-electrical": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-generator": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-radios": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-altimeter": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-ball": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-clock": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-attitude": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-rate-turn": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "req-ifr-directional-gyro": {
       "status": "active",
       "deck_id": "required-equipment"
     },
