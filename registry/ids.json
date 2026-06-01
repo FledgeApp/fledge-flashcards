@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "decks": {
+    "airspace-entry-equipment": {
+      "status": "active",
+      "path": "flashcards/airspace/airspace-entry-equipment.yaml"
+    },
+    "cloud-clearances": {
+      "status": "active",
+      "path": "flashcards/airspace/vfr-weather-minimums.yaml"
+    },
+    "c172-electrical": {
+      "status": "active",
+      "path": "flashcards/cessna-172-systems/electrical.yaml"
+    },
+    "lost-comm": {
+      "status": "active",
+      "path": "flashcards/instrument-procedures/lost-comm-ifr.yaml"
+    },
+    "required-equipment": {
+      "status": "active",
+      "path": "flashcards/private-pilot-knowledge/required-equipment.yaml"
+    },
+    "v-speeds": {
+      "status": "active",
+      "path": "flashcards/private-pilot-knowledge/v-speeds.yaml"
+    }
+  },
+  "cards": {
+    "class-a-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-b-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-b-pilot": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-b-equipment": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "mode-c-veil": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-c-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-c-equipment": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-d-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-d-equipment": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-e-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-g-entry": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "ads-b-out-airspace": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "speed-below-10000": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "speed-under-class-b": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "speed-near-c-d-airports": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "special-vfr": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "prohibited-restricted-moa": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "equipment-failure-deviation": {
+      "status": "active",
+      "deck_id": "airspace-entry-equipment"
+    },
+    "class-a": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-b": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-c": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-d": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-e-below-10000": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-e-at-above-10000": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-g-at-below-1200-day": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-g-at-below-1200-night": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-g-above-1200-below-10000-day": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-g-above-1200-below-10000-night": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "class-g-above-1200-at-above-10000": {
+      "status": "active",
+      "deck_id": "cloud-clearances"
+    },
+    "c172-elec-voltage": {
+      "status": "active",
+      "deck_id": "c172-electrical"
+    },
+    "c172-elec-power-sources": {
+      "status": "active",
+      "deck_id": "c172-electrical"
+    },
+    "c172-elec-alt-failure": {
+      "status": "active",
+      "deck_id": "c172-electrical"
+    },
+    "route-avef": {
+      "status": "active",
+      "deck_id": "lost-comm"
+    },
+    "altitude-mea": {
+      "status": "active",
+      "deck_id": "lost-comm"
+    },
+    "squawk": {
+      "status": "active",
+      "deck_id": "lost-comm"
+    },
+    "clearance-limit-with-efc": {
+      "status": "active",
+      "deck_id": "lost-comm"
+    },
+    "clearance-limit-no-efc": {
+      "status": "active",
+      "deck_id": "lost-comm"
+    },
+    "atomatoflames": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "flaps": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "grabcard": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "elt-inspection-battery": {
+      "status": "active",
+      "deck_id": "required-equipment"
+    },
+    "vx": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vy": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "va": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vno": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vne": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vfe": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vso": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vs1": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vg": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    },
+    "vr": {
+      "status": "active",
+      "deck_id": "v-speeds"
+    }
+  }
+}

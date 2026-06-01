@@ -74,6 +74,7 @@ function compileFolder(folderDir, errors) {
       subtitle: String(raw.subtitle || ''),
       badge: String(raw.badge || ''),
       accentKey: accent,
+      ...(raw.deprecated === true ? { deprecated: true } : {}),
       cards,
     });
   }
