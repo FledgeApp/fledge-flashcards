@@ -1,0 +1,21 @@
+id: required-equipment
+title: "Required Equipment (91.205)"
+subtitle: "ATOMATOFLAMES, FLAPS, GRABCARD memorization."
+badge: "EQ"
+accent: flame
+cards:
+  - id: atomatoflames
+    prompt: "ATOMATOFLAMES"
+    answer: "Day VFR required equipment"
+    detail: "Airspeed, Tach, Oil pressure, Manifold pressure (constant-speed prop), Altimeter, Temp (liquid-cooled), Oil temp (air-cooled), Fuel gauges, Landing gear position, Anti-collision lights, Magnetic compass, ELT, Seatbelts."
+  - id: flaps
+    prompt: "FLAPS"
+    answer: "Added for Night VFR"
+    detail: "Fuses (spares), Landing light (if for hire), Anti-collision lights, Position lights, Source of power (alternator/generator)."
+  - id: grabcard
+    prompt: "GRABCARD"
+    answer: "Added for IFR"
+    detail: "Generator/alternator, Radios for the flight, Attitude indicator, Ball (slip/skid), Clock (seconds), Altimeter (adjustable), Rate-of-turn indicator, Directional gyro."
+  - id: elt-inspection-battery
+    prompt: "ELT inspection / battery rule"
+    answer: "Inspect every 12 calendar months. Replace battery after 1 cumulative hour of use or at 50% of useful life."

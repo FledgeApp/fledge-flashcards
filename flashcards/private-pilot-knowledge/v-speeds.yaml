@@ -1,0 +1,46 @@
+id: v-speeds
+title: "V-Speeds"
+subtitle: "Airspeed callouts every PPL/CFI candidate should know cold."
+badge: "V"
+accent: sky
+cards:
+  - id: vx
+    prompt: "Vx"
+    answer: "Best angle of climb"
+    detail: "Most altitude per horizontal distance; used to clear obstacles."
+  - id: vy
+    prompt: "Vy"
+    answer: "Best rate of climb"
+    detail: "Most altitude per unit time."
+  - id: va
+    prompt: "Va"
+    answer: "Design maneuvering speed"
+    detail: "Max speed for full or abrupt control deflection without overstressing the airframe."
+  - id: vno
+    prompt: "Vno"
+    answer: "Max structural cruising speed"
+    detail: "Top of the green arc; exceed only in smooth air."
+  - id: vne
+    prompt: "Vne"
+    answer: "Never-exceed speed"
+    detail: "Red line. Do not exceed under any condition."
+  - id: vfe
+    prompt: "Vfe"
+    answer: "Max flap-extended speed"
+    detail: "Top of the white arc."
+  - id: vso
+    prompt: "Vso"
+    answer: "Stall speed in landing configuration"
+    detail: "Bottom of the white arc; gear/flaps down, power off."
+  - id: vs1
+    prompt: "Vs1"
+    answer: "Stall speed in a specified configuration"
+    detail: "Usually clean; bottom of the green arc."
+  - id: vg
+    prompt: "Vg"
+    answer: "Best glide speed"
+    detail: "Maximum lift-to-drag; used on engine failure."
+  - id: vr
+    prompt: "Vr"
+    answer: "Rotation speed"
+    detail: "Speed at which back-pressure is applied for liftoff."

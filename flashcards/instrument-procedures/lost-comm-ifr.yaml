@@ -1,0 +1,22 @@
+id: lost-comm
+title: "Lost Comm (IFR)"
+subtitle: "Route, altitude, and EFC timing under 91.185."
+badge: "NO"
+accent: heart
+cards:
+  - id: route-avef
+    prompt: "Lost-comm route - AVE-F"
+    answer: "Assigned - Vectored - Expected - Filed"
+    detail: "If vectored, proceed direct to the fix, route, or airway specified in the vector clearance."
+  - id: altitude-mea
+    prompt: "Lost-comm altitude - MEA"
+    answer: "Fly the highest of: Minimum altitude for the route, Expected altitude, Assigned altitude."
+  - id: squawk
+    prompt: "Squawk when NORDO"
+    answer: "7600"
+  - id: clearance-limit-with-efc
+    prompt: "Leave clearance limit with EFC - when?"
+    answer: "At the expect-further-clearance time. Begin descent/approach to land as close as possible to ETA."
+  - id: clearance-limit-no-efc
+    prompt: "Leave clearance limit with no EFC - when?"
+    answer: "Upon arrival if the limit is an IAF; otherwise proceed to an IAF and begin descent/approach near ETA."

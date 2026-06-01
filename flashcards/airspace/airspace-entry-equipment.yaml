@@ -1,0 +1,78 @@
+id: airspace-entry-equipment
+title: "Airspace Entry + Equipment"
+subtitle: "Clearances, radio calls, transponders, ADS-B, and speed limits."
+badge: "ATC"
+accent: sky
+cards:
+  - id: class-a-entry
+    prompt: "Class A - entry requirements"
+    answer: "ATC clearance, IFR flight plan, instrument rating, and IFR-equipped aircraft."
+    detail: "For PPL VFR flying, Class A is effectively off-limits unless specifically authorized."
+  - id: class-b-entry
+    prompt: "Class B - VFR entry"
+    answer: "Get an explicit ATC clearance before entering."
+    detail: "\"Radar contact\" or \"standby\" is not enough. Listen for wording like \"cleared into the Bravo.\""
+  - id: class-b-pilot
+    prompt: "Class B - pilot qualification"
+    answer: "At least a private pilot certificate, or the required student/recreational/sport pilot endorsement."
+    detail: "Some listed primary Class B airports require at least a private pilot certificate for takeoff or landing."
+  - id: class-b-equipment
+    prompt: "Class B - basic equipment"
+    answer: "Two-way radio, Mode C transponder, and ADS-B Out where required."
+    detail: "Mode C means altitude-reporting transponder capability."
+  - id: mode-c-veil
+    prompt: "Mode C veil"
+    answer: "Within 30 NM of listed Class B primary airports, surface to 10,000 MSL."
+    detail: "Mode C transponder and ADS-B Out are generally required, with limited exceptions for aircraft without electrical systems, gliders, and balloons."
+  - id: class-c-entry
+    prompt: "Class C - VFR entry"
+    answer: "Establish two-way radio communication before entering."
+    detail: "If ATC says your callsign, communication is established. If they say \"aircraft calling, standby,\" stay out."
+  - id: class-c-equipment
+    prompt: "Class C - equipment"
+    answer: "Two-way radio, Mode C transponder, and ADS-B Out."
+    detail: "The transponder and ADS-B requirements also apply above Class C up to 10,000 MSL within its lateral boundaries."
+  - id: class-d-entry
+    prompt: "Class D - VFR entry"
+    answer: "Establish two-way radio communication before entering."
+    detail: "Maintain communication while operating in the Class D airspace."
+  - id: class-d-equipment
+    prompt: "Class D - equipment"
+    answer: "Two-way radio."
+    detail: "A transponder or ADS-B Out may still be required if the Class D lies inside another required airspace, such as a Mode C veil."
+  - id: class-e-entry
+    prompt: "Class E - VFR entry"
+    answer: "No ATC clearance or radio communication required for VFR."
+    detail: "Class E is controlled airspace, so weather minimums still matter."
+  - id: class-g-entry
+    prompt: "Class G - VFR entry"
+    answer: "No ATC entry requirement."
+    detail: "Class G is uncontrolled airspace. You still need the correct VFR weather minimums."
+  - id: ads-b-out-airspace
+    prompt: "ADS-B Out - common required areas"
+    answer: "Class A, B, and C; Mode C veil; above B/C shelves up to 10,000 MSL; most Class E above 10,000 MSL."
+    detail: "The Class E rule excludes airspace at and below 2,500 AGL. ADS-B is also required over the Gulf of Mexico at and above 3,000 MSL within 12 NM of the U.S. coast."
+  - id: speed-below-10000
+    prompt: "Speed limit below 10,000 MSL"
+    answer: "250 KIAS."
+    detail: "This is the general speed limit unless another lower limit applies."
+  - id: speed-under-class-b
+    prompt: "Speed below Class B or in a VFR corridor"
+    answer: "200 KIAS."
+    detail: "Applies beneath Class B shelves and in VFR corridors through Class B."
+  - id: speed-near-c-d-airports
+    prompt: "Speed near Class C/D primary airports"
+    answer: "200 KIAS within 4 NM and at or below 2,500 AGL."
+    detail: "This applies around the primary airport of the Class C or Class D surface area."
+  - id: special-vfr
+    prompt: "Special VFR - basics"
+    answer: "ATC clearance, clear of clouds, and at least 1 SM flight visibility."
+    detail: "At night, the pilot must be instrument rated and the aircraft must be equipped for IFR."
+  - id: prohibited-restricted-moa
+    prompt: "Prohibited vs Restricted vs MOA"
+    answer: "Prohibited: stay out. Restricted: hazardous when active; get permission. MOA: VFR allowed, use caution."
+    detail: "Always check current status and controlling agency when planning near special use airspace."
+  - id: equipment-failure-deviation
+    prompt: "Required transponder or ADS-B fails"
+    answer: "Request an ATC deviation before operating in required airspace."
+    detail: "If the failure happens in flight, notify ATC as soon as practical and follow instructions."

@@ -1,0 +1,41 @@
+id: cloud-clearances
+title: "VFR Weather Mins"
+subtitle: "Visibility and cloud clearance by airspace and altitude (91.155)."
+badge: "WX"
+accent: avgas
+cards:
+  - id: class-a
+    prompt: "Class A - VFR mins"
+    answer: "Not applicable - IFR operations only"
+    detail: "Class A generally begins at 18,000 feet MSL. Operations are conducted under IFR unless specifically authorized."
+  - id: class-b
+    prompt: "Class B - VFR mins"
+    answer: "3 SM visibility - clear of clouds"
+  - id: class-c
+    prompt: "Class C - VFR mins"
+    answer: "3 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+  - id: class-d
+    prompt: "Class D - VFR mins"
+    answer: "3 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+  - id: class-e-below-10000
+    prompt: "Class E below 10,000 MSL - VFR mins"
+    answer: "3 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+  - id: class-e-at-above-10000
+    prompt: "Class E at/above 10,000 MSL - VFR mins"
+    answer: "5 SM visibility - 1,000 above - 1,000 below - 1 SM horizontal"
+  - id: class-g-at-below-1200-day
+    prompt: "Class G at/below 1,200 AGL (day)"
+    answer: "1 SM visibility - clear of clouds"
+  - id: class-g-at-below-1200-night
+    prompt: "Class G at/below 1,200 AGL (night)"
+    answer: "3 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+    detail: "Night exception near an airport: 1 SM visibility and clear of clouds within 1/2 SM of the runway."
+  - id: class-g-above-1200-below-10000-day
+    prompt: "Class G above 1,200 AGL and below 10,000 MSL (day)"
+    answer: "1 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+  - id: class-g-above-1200-below-10000-night
+    prompt: "Class G above 1,200 AGL and below 10,000 MSL (night)"
+    answer: "3 SM visibility - 1,000 above - 500 below - 2,000 horizontal"
+  - id: class-g-above-1200-at-above-10000
+    prompt: "Class G above 1,200 AGL and at/above 10,000 MSL"
+    answer: "5 SM visibility - 1,000 above - 1,000 below - 1 SM horizontal"
