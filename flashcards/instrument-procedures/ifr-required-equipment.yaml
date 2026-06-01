@@ -1,0 +1,38 @@
+id: ifr-required-equipment
+title: "IFR Required Equipment (91.205)"
+subtitle: "GRABCARD memory items for instrument flight."
+badge: "IFR"
+accent: avgas
+cards:
+  - id: ifr-required-generator
+    prompt: "**G**RABCARD - G"
+    answer: "Generator or alternator"
+    detail: "IFR required equipment under 91.205(d)."
+  - id: ifr-required-radios
+    prompt: "G**R**ABCARD - R"
+    answer: "Radio/navigation equipment appropriate to the facilities used"
+    detail: "The equipment must be appropriate for the route and procedures to be flown."
+  - id: ifr-required-altimeter
+    prompt: "GR**A**BCARD - A"
+    answer: "Sensitive altimeter adjustable for barometric pressure"
+    detail: "IFR required equipment under 91.205(d)."
+  - id: ifr-required-ball
+    prompt: "GRA**B**CARD - B"
+    answer: "Slip-skid indicator"
+    detail: "Often remembered as the ball."
+  - id: ifr-required-clock
+    prompt: "GRAB**C**ARD - C"
+    answer: "Clock"
+    detail: "Must display hours, minutes, and seconds with a sweep-second pointer or digital presentation."
+  - id: ifr-required-attitude
+    prompt: "GRABC**A**RD - A"
+    answer: "Gyroscopic pitch and bank indicator"
+    detail: "Often called the attitude indicator."
+  - id: ifr-required-rate-turn
+    prompt: "GRABCA**R**D - R"
+    answer: "Gyroscopic rate-of-turn indicator"
+    detail: "Some aircraft have approved exceptions, but this is the mnemonic item."
+  - id: ifr-required-directional-gyro
+    prompt: "GRABCAR**D** - D"
+    answer: "Gyroscopic direction indicator"
+    detail: "Often called the directional gyro or heading indicator."
