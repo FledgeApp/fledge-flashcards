@@ -20,8 +20,11 @@ jobs:
 
   # On merge to main, compile the catalog and publish it to the CDN that the
   # Fledge app fetches at runtime. PRs do NOT publish — only validate.
+  # Gated behind the FLASHCARDS_PUBLISH_ENABLED repo variable so CI stays green
+  # before the CDN is provisioned. Set it (Settings → Secrets and variables →
+  # Actions → Variables) to `true` along with the AWS secrets below to go live.
   publish:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.FLASHCARDS_PUBLISH_ENABLED == 'true'
     needs: validate
     runs-on: ubuntu-latest
     steps:
