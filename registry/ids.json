@@ -14,8 +14,10 @@
       "path": "flashcards/airspace/vfr-weather-minimums.yaml"
     },
     "c172-electrical": {
-      "status": "active",
-      "path": "flashcards/cessna-172-systems/electrical.yaml"
+      "status": "deprecated",
+      "path": "flashcards/cessna-172-systems/electrical.yaml",
+      "deprecated_at": "2026-06-01",
+      "reason": "Retired from the public catalog because C172-specific systems content is not broadly applicable to all Fledge learners."
     },
     "ifr-required-equipment": {
       "status": "active",
@@ -84,6 +86,30 @@
       "deck_id": "airspace-entry-equipment"
     },
     "av1ate-elt-inspection-battery": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-annual-inspection": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-vor-check": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-100-hour-inspection": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-airworthiness-directives": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-transponder-check": {
+      "status": "active",
+      "deck_id": "av1ate"
+    },
+    "av1ate-static-altimeter-check": {
       "status": "active",
       "deck_id": "av1ate"
     },
