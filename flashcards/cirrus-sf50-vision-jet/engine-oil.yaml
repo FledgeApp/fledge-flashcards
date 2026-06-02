@@ -1,0 +1,21 @@
+id: sf50-engine-oil
+title: "Engine & Oil"
+subtitle: "SF50 Vision Jet engine, thrust, and oil memory items."
+badge: "ENG"
+accent: flame
+cards:
+  - id: sf50-engine-oil-engine-model
+    prompt: "Engine"
+    answer: "Williams FJ33-5A"
+  - id: sf50-engine-oil-thrust
+    prompt: "Thrust"
+    answer: "1,846 lb"
+  - id: sf50-engine-oil-approved-oils
+    prompt: "Approved oils"
+    answer: "Mobil Jet II / Mobil 254"
+  - id: sf50-engine-oil-total
+    prompt: "Oil total"
+    answer: "3 quarts"
+  - id: sf50-engine-oil-full-line
+    prompt: "Oil to the full line"
+    answer: "2.2 quarts"

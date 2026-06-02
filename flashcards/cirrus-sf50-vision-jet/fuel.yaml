@@ -1,0 +1,24 @@
+id: sf50-fuel
+title: "Fuel"
+subtitle: "SF50 Vision Jet fuel type, quantity, temperature, and imbalance limits."
+badge: "FUEL"
+accent: green
+cards:
+  - id: sf50-fuel-approved-fuels
+    prompt: "Approved fuels"
+    answer: "Jet A, Jet A-1, JP-8"
+  - id: sf50-fuel-density
+    prompt: "Fuel density"
+    answer: "6.76 lb/gal"
+  - id: sf50-fuel-usable
+    prompt: "Usable fuel"
+    answer: "296 gal"
+  - id: sf50-fuel-max-imbalance
+    prompt: "Max allowable fuel imbalance"
+    answer: "15 gal"
+  - id: sf50-fuel-min-temp
+    prompt: "Min fuel temperature"
+    answer: "-40 F / -40 C"
+  - id: sf50-fuel-max-temp
+    prompt: "Max fuel temperature"
+    answer: "122 F / 50 C"

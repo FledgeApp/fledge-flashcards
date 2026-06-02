@@ -1,0 +1,39 @@
+id: sf50-starting
+title: "Starting"
+subtitle: "SF50 Vision Jet start temperature, wind, EPU, and restart limits."
+badge: "START"
+accent: flame
+cards:
+  - id: sf50-starting-min-oil-temp
+    prompt: "Min oil temperature"
+    answer: "-40 F / -40 C"
+  - id: sf50-starting-min-temp-start
+    prompt: "Min temperature for start"
+    answer: "-40 F / -40 C"
+  - id: sf50-starting-epu-requirements
+    prompt: "EPU requirements"
+    answer: "28 volts and 800-1000 amps"
+  - id: sf50-starting-max-tailwind
+    prompt: "Max tailwind for start"
+    answer: "15 knots"
+  - id: sf50-starting-max-crosswind
+    prompt: "Max crosswind for start"
+    answer: "25 knots"
+  - id: sf50-starting-inflight-air-start
+    prompt: "Inflight air start envelope"
+    answer: "120-200 KIAS and less than 18,000 feet"
+  - id: sf50-starting-attempt-duration
+    prompt: "Max time on per attempted start"
+    answer: "30 seconds"
+  - id: sf50-starting-first-attempt-cooldown
+    prompt: "Cooldown after 1st start attempt"
+    answer: "30 seconds off"
+  - id: sf50-starting-second-attempt-cooldown
+    prompt: "Cooldown after 2nd start attempt"
+    answer: "5 minutes off"
+  - id: sf50-starting-third-attempt-cooldown
+    prompt: "Cooldown after 3rd start attempt"
+    answer: "30 minutes off"
+  - id: sf50-starting-failed-start-check
+    prompt: "After failed start"
+    answer: "External check required"
