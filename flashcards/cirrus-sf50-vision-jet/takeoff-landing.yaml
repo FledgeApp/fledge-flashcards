@@ -1,0 +1,18 @@
+id: sf50-takeoff-landing
+title: "Takeoff & Landing"
+subtitle: "SF50 Vision Jet wind and configuration limits for takeoff and landing."
+badge: "T/L"
+accent: avgas
+cards:
+  - id: sf50-takeoff-landing-max-tailwind
+    prompt: "Max tailwind"
+    answer: "10 knots"
+  - id: sf50-takeoff-landing-crosswind-flaps-50
+    prompt: "Max demonstrated crosswind with flaps 50%"
+    answer: "18 knots"
+  - id: sf50-takeoff-landing-crosswind-flaps-100
+    prompt: "Max demonstrated crosswind with flaps 100%"
+    answer: "16 knots"
+  - id: sf50-takeoff-landing-takeoff-flaps
+    prompt: "Only approved takeoff setting"
+    answer: "Flaps 50%"

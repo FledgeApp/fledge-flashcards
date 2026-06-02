@@ -1,0 +1,110 @@
+id: sf50-general-operating-limitations
+title: "General Operating Limitations"
+subtitle: "SF50 Vision Jet speeds, temperatures, and altitude limits."
+badge: "SF50"
+accent: avgas
+cards:
+  - id: sf50-gol-max-ramp-weight
+    prompt: "Max ramp weight"
+    prompt_subtitle: "Weights"
+    answer: "6,040 lb"
+  - id: sf50-gol-max-takeoff-weight
+    prompt: "Max takeoff weight"
+    prompt_subtitle: "Weights"
+    answer: "6,000 lb"
+  - id: sf50-gol-max-landing-weight
+    prompt: "Max landing weight"
+    prompt_subtitle: "Weights"
+    answer: "5,550 lb"
+  - id: sf50-gol-max-zero-fuel-weight
+    prompt: "Max zero fuel weight"
+    prompt_subtitle: "Weights"
+    answer: "4,900 lb"
+  - id: sf50-gol-max-baggage-weight
+    prompt: "Max baggage weight"
+    prompt_subtitle: "Weights"
+    answer: "300 lb"
+  - id: sf50-gol-max-cargo-xtend-weight
+    prompt: "Max Cargo X-Tend weight"
+    prompt_subtitle: "Weights"
+    answer: "40 lb"
+  - id: sf50-gol-vmo
+    prompt: "VMO"
+    prompt_subtitle: "Speeds"
+    answer: "250 KIAS"
+    detail: "Maximum operating speed."
+  - id: sf50-gol-mmo
+    prompt: "MMO"
+    prompt_subtitle: "Speeds"
+    answer: "0.53 Mach"
+    detail: "Maximum operating Mach number."
+  - id: sf50-gol-vo
+    prompt: "VO"
+    prompt_subtitle: "Speeds"
+    answer: "150 KIAS"
+    detail: "Operating maneuvering speed."
+  - id: sf50-gol-takeoff-thrust-duration
+    prompt: "Max duration for takeoff thrust"
+    prompt_subtitle: "Speeds"
+    answer: "5 minutes"
+  - id: sf50-gol-max-operating-altitude
+    prompt: "Max operating altitude"
+    prompt_subtitle: "Altitudes"
+    answer: "FL310"
+  - id: sf50-gol-min-operating-temp-fl310
+    prompt: "Min operating temperature at FL310"
+    prompt_subtitle: "Temperatures"
+    answer: "-82 F / -63 C"
+  - id: sf50-gol-min-operating-temp-fl200
+    prompt: "Min operating temperature at FL200"
+    prompt_subtitle: "Temperatures"
+    answer: "-65 F / -54 C"
+  - id: sf50-gol-min-airport-elevation
+    prompt: "Min airport elevation"
+    prompt_subtitle: "Altitudes"
+    answer: "-1,000 feet MSL"
+  - id: sf50-gol-max-airport-elevation
+    prompt: "Max airport elevation"
+    prompt_subtitle: "Altitudes"
+    answer: "10,000 feet MSL"
+  - id: sf50-gol-min-takeoff-temp
+    prompt: "Min takeoff temperature"
+    prompt_subtitle: "Temperatures"
+    answer: "-40 F / -40 C"
+  - id: sf50-gol-max-takeoff-temp
+    prompt: "Max takeoff temperature"
+    prompt_subtitle: "Temperatures"
+    answer: "122 F / 50 C"
+  - id: sf50-gol-high-energy-landing-cooldown
+    prompt: "Cooldown after high-energy landing event"
+    prompt_subtitle: "General"
+    answer: "30 minutes"
+  - id: sf50-gol-vfe-50
+    prompt: "VFE 50%"
+    prompt_subtitle: "Speeds"
+    answer: "190 KIAS"
+    detail: "Maximum flap extended speed with flaps 50%."
+  - id: sf50-gol-vfe-100
+    prompt: "VFE 100%"
+    prompt_subtitle: "Speeds"
+    answer: "150 KIAS"
+    detail: "Maximum flap extended speed with flaps 100%."
+  - id: sf50-gol-vlo-extend
+    prompt: "VLO extend"
+    prompt_subtitle: "Speeds"
+    answer: "210 KIAS"
+    detail: "Maximum landing gear operating speed for extension."
+  - id: sf50-gol-vlo-retract
+    prompt: "VLO retract"
+    prompt_subtitle: "Speeds"
+    answer: "150 KIAS"
+    detail: "Maximum landing gear operating speed for retraction."
+  - id: sf50-gol-vle
+    prompt: "VLE"
+    prompt_subtitle: "Speeds"
+    answer: "210 KIAS"
+    detail: "Maximum landing gear extended speed."
+  - id: sf50-gol-max-cabin-pressure-differential
+    prompt: "Max cabin pressure differential"
+    prompt_subtitle: "General"
+    answer: "7.1 psid"

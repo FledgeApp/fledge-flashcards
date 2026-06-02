@@ -1,0 +1,24 @@
+id: sf50-afcs
+title: "AFCS"
+subtitle: "SF50 Vision Jet autopilot engagement and disconnect limits."
+badge: "AFCS"
+accent: sky
+cards:
+  - id: sf50-afcs-min-speed-flaps-100
+    prompt: "Min AFCS speed with flaps 100%"
+    answer: "85 KIAS"
+  - id: sf50-afcs-min-speed-flaps-50
+    prompt: "Min AFCS speed with flaps 50%"
+    answer: "95 KIAS"
+  - id: sf50-afcs-min-speed-flaps-up
+    prompt: "Min AFCS speed with flaps up"
+    answer: "105 KIAS"
+  - id: sf50-afcs-min-engagement-altitude
+    prompt: "Min AFCS engagement altitude"
+    answer: "400 feet AGL"
+  - id: sf50-afcs-visual-approach-disconnect-altitude
+    prompt: "AFCS disconnect altitude for visual approach"
+    answer: "1,000 feet AGL"
+  - id: sf50-afcs-iap-disconnect-altitude
+    prompt: "AFCS disconnect altitude on IAP"
+    answer: "Minimums"

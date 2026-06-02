@@ -1,0 +1,33 @@
+id: sf50-icing
+title: "Icing"
+subtitle: "SF50 Vision Jet IPS fluid, temperature, speed, and inspection limits."
+badge: "ICE"
+accent: sky
+cards:
+  - id: sf50-icing-usable-ips-fluid
+    prompt: "Usable IPS fluid"
+    answer: "3.0 gal"
+  - id: sf50-icing-min-dispatch-ips-fluid
+    prompt: "Minimum dispatch IPS fluid quantity"
+    answer: "1.0 gal"
+  - id: sf50-icing-min-windshield-ips-temp
+    prompt: "Min windshield IPS temperature"
+    answer: "-22 F / -30 C"
+  - id: sf50-icing-min-wing-stab-ips-temp
+    prompt: "Min wing/stab IPS temperature"
+    answer: "-40 F / -40 C"
+  - id: sf50-icing-min-airspeed
+    prompt: "Min airspeed in icing"
+    answer: "160 KIAS"
+  - id: sf50-icing-max-flaps-ice-accretion
+    prompt: "Max flap deflection with ice accretion"
+    answer: "50% flaps"
+  - id: sf50-icing-windshield-ips-duty-cycle
+    prompt: "Max duty cycle for windshield IPS"
+    answer: "10 sec on, 10 sec off"
+  - id: sf50-icing-tactile-inspection-before-departure
+    prompt: "Tactile inspection timing before departure"
+    answer: "5 minutes before departure"
+  - id: sf50-icing-max-probe-heat-ground
+    prompt: "Max continuous probe heat on ground"
+    answer: "5 minutes"
